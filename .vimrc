@@ -1,11 +1,9 @@
-filetype plugin indent on
-
 set encoding=utf8
 set nocompatible
 set nowrap
 set number
 
-syntax enable
+set syntax=on
 
 set cursorline
 
@@ -19,7 +17,6 @@ call plug#begin('~/.vim/pluged')
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'romainl/flattened'
-Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -31,7 +28,3 @@ let g:airline#extensions#keymap#enabled = 0
 let g:airline_section_z = "\ue0a1:%l/%L Col:%c"
 let g:Powerline_symbols = 'unicode'
 let g:airline#extensions#xkblayout#enabled = 0
-
-autocmd VimEnter * NERDTree
-
-map <C-n> :NERDTreeToggle<CR>
